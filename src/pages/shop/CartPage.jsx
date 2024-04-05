@@ -39,7 +39,7 @@ const CartPage = () => {
         }).then((result) => {
             refetch();
             if (result.isConfirmed) {
-                fetch(`http://localhost:6001/carts/${item._id}`, {
+                fetch(`https://complete-foodi-server-2e4j.onrender.com/carts/${item._id}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())
@@ -60,7 +60,7 @@ const CartPage = () => {
 
     // handleIncrease function
     const handleIncrease = (item) => {
-        fetch(`http://localhost:6001/carts/${item._id}`, {
+        fetch(`https://complete-foodi-server-2e4j.onrender.com/carts/${item._id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json; charset=UTF-8"
@@ -96,7 +96,7 @@ const CartPage = () => {
     // handleDecrease function
     const handleDecrease = (item) => {
         if (item.quantity > 1) {
-            fetch(`http://localhost:6001/carts/${item._id}`, {
+            fetch(`https://complete-foodi-server-2e4j.onrender.com/carts/${item._id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json; charset=UTF-8"
