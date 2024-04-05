@@ -117,7 +117,7 @@ const Navbar = () => {
             <label
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle mr-3 hidden lg:flex"
+              className="btn btn-ghost btn-circle mr-3 lg:flex"
             >
               <div className="indicator">
                 <svg
